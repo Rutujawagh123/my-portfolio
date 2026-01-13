@@ -1,39 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shivani Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rutuja Wagh | Portfolio</title>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+<!-- FONT AWESOME (GitHub & LinkedIn Icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Shivani</h1>
-    <p>Web Developer | AI Enthusiast</p>
-  </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <h2 class="logo">R<span>W</span></h2>
+
+    <ul class="nav-links">
+  <li><a href="#home" class="nav-link active">Home</a></li>
+  <li><a href="#about" class="nav-link">About</a></li>
+  <li><a href="#skills" class="nav-link">Skills</a></li>
+  <li><a href="#projects" class="nav-link">Projects</a></li>
+  <li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="home" id="home">
+  <div class="hero-container">
+
+    <div class="content">
+      <h4>Hello, I'm</h4>
+      <h1>Rutuja <span>Wagh</span></h1>
+      <h3>Android & Web Developer</h3>
+      <p>I build clean, responsive websites and Android applications.</p>
+
+      <a href="resume.pdf" class="btn" download>Download CV</a>
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-links"> 
+        <a href="https://github.com/Rutujawagh123" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rutuja-wagh-89a34329a" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- PROFILE PHOTO -->
+    <div class="hero-img">
+      <img src="images/profile.jpg" alt="Profile Photo">
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a motivated Electronics & Computer Engineering student with a Diploma
+      background in Computer Engineering. I have strong fundamentals in C programming,
+      DSA basics, and Android frontend development.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="card skill-box">
+    <span>C</span>
+    <span>DSA Basics</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Android XML</span>
+    <span>Java (Basic)</span>
+    <span>Android Studio</span>
+    <span>Postman</span>
+    <span>XAMPP</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Smart Travel Guide Application</h3>
     <ul>
-      <li>Project 1 - Dummy Description</li>
-      <li>Project 2 - Dummy Description</li>
+      <li>Android-based travel information app</li>
+      <li>Category-wise place search</li>
+      <li>User login & ratings</li>
+      <li>Tech: Java, XML, PHP, MySQL</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Basic Data Analytics</li>
-    </ul>
-  </section>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <div class="card contact-info">
+    <p>📧 Email: rutujawagh8767@gmail.com</p>
+    <p>📞 Phone: +91 9370929665</p>
+    <p>📍 Pune, Maharashtra</p>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: example@email.com</p>
-  </section>
+<!-- FOOTER -->
+<footer>
+  <h3>Rutuja Wagh</h3>
+  <p>Aspiring Android & Web Developer</p>
 
-  <script src="script.js"></script>
+  <div class="footer-social">
+    <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+  const links = document.querySelectorAll('.nav-link');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+</script>
+
 </body>
 </html>
