@@ -7,7 +7,7 @@ const ASSETS = [
   "./manifest.json",
   "./resume.pdf",
   "./images/profile.jpg",
-  "./images/favicon.png"
+  "./images/favicon.ico"
 ];
 
 self.addEventListener("install", event => {
